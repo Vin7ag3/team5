@@ -1,0 +1,17 @@
+:root {
+  --ash: #c4beae;
+  --tuatara: #272726;
+  --domino: #86735b;
+  --kabul: #564a3e;
+  --lemon-grass: #9b9c8c;
+  --chicago: #636459;
+  --brown-rust: #a46c36;
+  --salt-box: #605b64;
+  --mountain-mist: #96949c;
+  --white: #ffffff;
+}
+
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+

@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS postup;
+
+CREATE DATABASE postup;
