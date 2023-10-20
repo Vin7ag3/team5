@@ -1,5 +1,6 @@
 // import seq connection
 const sequelize = require('../config/connection');
+const { Item } = require('../models');
 
 // import datatypes from seq
 const { DataTypes } = require('sequelize');
@@ -12,10 +13,6 @@ const itemsData = [
 
 // seedItems function
 const seedItems = async () => {
-// Item model with a name type string
-  const Item = sequelize.define('Item', {
-    name: DataTypes.STRING,
-  });
 
 // sync item model with the database force to recreate table
   await Item.sync({ force: true });

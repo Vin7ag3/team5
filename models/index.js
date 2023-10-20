@@ -1,10 +1,17 @@
-const { Sequelize, DataTypes } = require ('sequelize');
-const sequelize = new Sequelize();
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+const Product = require('./product');
+const Item = require('./items');
 
-// define models
-const Item = require('./items')(sequelize, Sequelize.DataTypes);
-// import Item model and associates it - seq. instance
+Product.hasMany(Item, {
+    foreignKey: 'product_id',
+});
+
+Item.belongsTo(Product, {
+    foreignKey: 'product_id',
+});
 
 module.exports = {
-    item,
+    Item,
+    Product,
 };

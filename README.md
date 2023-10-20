@@ -1,5 +1,5 @@
 
-# https://github.com/Vin7ag3
+# PostUp
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description

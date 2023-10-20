@@ -1,8 +1,28 @@
-module.exports = function (sequelize, DataTypes) {
-    const Item = sequelize.define('Item', {
-        name: DataTypes.STRING,        
-});
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-// exports item
-    return Item;
-};
+class Item extends Model {}
+
+Item.init(
+    {
+        id: {
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          primaryKey: true,
+          autoIncrement: true,
+        },
+        name: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
+      },
+      {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'item',
+      }
+);
+
+module.exports = Item;
+
