@@ -1,0 +1,14 @@
+<div class="container my-4">
+  <div class="gridone m-0 p-0">
+    {{#each products}}
+    <div class="item">
+      <a href="#">
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <p>Price: {{price}}</p>
+        <img class="img-fluid" src="{{imageUrl}}" alt="{{name}}">
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>
