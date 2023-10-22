@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
+
 
 // config handlebars as the view engine
 app.engine('handlebars', exphbs({

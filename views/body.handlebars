@@ -1,41 +1,63 @@
-{{> header}}
-
-<main class="intro-section">
-  <div class="container">
-    <div class="grid">
-      <div class="column-xs-12">
-        <ul class="slider">
-          <li class="slider-item active">
-            <div class="grid vertical">
-              <div class="column-xs-12 column-md-2 hide-mobile">
-                <div class="intro">
-                  <a href="#">
-                    <h1 class="title"><span class="underline">Explore Tokyo</span></h1>
-                  </a>
-                </div>
-              </div>
-              <div class="column-xs-12 column-md-10">
-                <div class="image-holder">
-                  <img src="https://source.unsplash.com/cddaZDt6uRw">
-                </div>
-                <div class="grid">
-                  <div class="column-xs-12 column-md-9">
-                    <div class="intro show-mobile">
-                      <a href="#">
-                        <h1 class="title"><span class="underline">lorem</span></h1>
-                      </a>
+<div class="banner-image py-5"style="position: relative;">
+    <img src="/img/banner.jpg" alt="Banner Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+    <div class="container py-5">
+      {{> header }}
+        <div class="row py-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="section">
+                    <div class="container">
+                        <div class="row full-height">
+                            <div class="col-12 align-self-center">
+                                <div class="section">
+                                    <div class="left-side-shadow"></div>
+                                    <div class="right-side-shadow"></div>
+                                    <ul class="link-list a-one">
+                                        <li><a href="#" style="color:#c4beae;"><span>PostUp.</span></a></li>
+                                        <li><a href="#" style="color:#c4beae; text-decoration:none;"><span>We sell your stuff.</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="description">Ipsum.</p>
-                  </div>
                 </div>
-              </div>
             </div>
-          </li>
-        </ul>
-      <div class="grid">
-      </div>
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <div class="lead-form rounded p-5">
+                    <form id="upload-form" method="POST" enctype="multipart/form-data" action="/upload">
+                        <div>
+                            <h3 class="font-weight-bold">Post it</h3>
+                            <h6 class="pt-3 pb-4 form-h6">List your unwanted items</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description:</label>
+                                    <textarea id="description" class="text-area" name="description" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="price">Price:</label>
+                                    <input type="number" id="price" name="price" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-file-preview">Upload Image:</label>
+                                    <div id="drop-zone" class="drop-zone">
+                                        <img src="/img/load.gif" alt="uploadicon" width="100" height="100">
+                                        <p>Drag + drop image files here</p>
+                                    </div>
+                                    <input type="file" id="input-file-preview" name="input-file-preview" required>
+                                    <div id="image-preview" class="mt-2"></div>
+                                </div>
+                                <button type="submit" class="btn-up">Upload</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      {{>filter}}
     </div>
-  </div>
-</main>
-
-{{> footer}}
+</div>

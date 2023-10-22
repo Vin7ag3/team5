@@ -1,14 +1,17 @@
-<div class="container my-4">
+<div class="container my-4 grid-products">
+  <h4 class="posts-title vertical">Posts</h4>
   <div class="gridone m-0 p-0">
     {{#each products}}
-    <div class="item">
-      <a href="#">
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
-        <p>Price: {{price}}</p>
-        <img class="img-fluid" src="{{imageUrl}}" alt="{{name}}">
-      </a>
-    </div>
+      <div class="item" data-date="{{date}}">
+        {{!-- <a href="#"> --}}
+           <img class="img-fluid" src="{{imageUrl}}" alt="{{name}}">
+          <div class="product-style">
+            <h2>{{name}}</h2>
+            <p>{{description}}</p>
+            <p>Price: {{price}}</p>
+          </div>
+        {{!-- </a> --}}
+      </div>
     {{/each}}
   </div>
 </div>
