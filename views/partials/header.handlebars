@@ -1,11 +1,17 @@
-<header>
-    <nav class="flex-nav">
-  <div class="container">
-    <div class="grid">
-      <div class="column-xs-9 column-md-8">
-        <p id="logo">PostUp<span id="highlight">.</span></p>
-      </div>
-    </div>
+<nav class="navbar navbar-dark navbarpost"> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-logo" href="#">PostUp.</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    {{!-- <div class="navbar-nav float-right text-right pr-3">
+      <a class="nav-item nav-link active" href="#">Home</a>
+    </div> --}}
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Username">
+      <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+      <button class="btn-up my-2 my-sm-0" type="submit">Login</button>
+    </form>
   </div>
 </nav>
-</header>

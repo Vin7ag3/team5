@@ -1,0 +1,19 @@
+<form id="upload-form" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required>
+  </div>
+  <div class="form-group">
+    <label for="input-file-preview">Upload Image:</label>
+    <input type="file" id="input-file-preview" name="input-file-preview" required>
+  </div>
+  <button type="submit">Upload</button>
+</form>
