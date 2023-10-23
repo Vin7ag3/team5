@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
   searchInput.addEventListener('input', updateGrid);
   sortSelect.addEventListener('change', updateGrid);
   
-// Initialize
+// initialize
   updateGrid();
 });
 

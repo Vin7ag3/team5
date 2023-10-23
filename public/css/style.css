@@ -206,7 +206,7 @@ textarea:hover {
 /* filter style */
 select {
   background-color: transparent;
-  color: var(--mountain-mist);
+  color: var(--ash);
   border: solid 3px;
 }
 
@@ -247,7 +247,19 @@ footer img {
 
 /* media queries breakpoints - mobile first responsive */
 @media (max-width: 481px) {
- 
+  #search {
+    margin-left: -120px;
+  }
+  #sort {
+    margin-left: -50px;
+  }
+  #description {
+    margin: 0px 0px 0px 44px;
+  }
+  .a-one {
+    font-size: 50px;
+    margin-top: 1px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -267,5 +279,4 @@ footer img {
     grid-template-rows: auto;
   }
 }
-
 
