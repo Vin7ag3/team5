@@ -66,6 +66,7 @@ h4:after {
 
 .posts-title {
   margin-top: 115px;
+  font-size: 2.5rem;
 }
 
 /* btn page */
@@ -176,7 +177,7 @@ textarea:hover {
 /* text area style override */
 .text-area {
   margin-top: 10px;
-  margin-right: 35px;
+  margin-right: 38px;
 }
 
 /* filter handle style */
@@ -225,6 +226,8 @@ select {
 
 .img-fluid {
   border: solid 1px var(--tuatara);
+  width: 400px;
+  height: 400px;
 }
 
 footer {

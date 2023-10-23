@@ -58,43 +58,51 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // sorting
+// sorting
   const searchInput = document.getElementById('search');
   const sortSelect = document.getElementById('sort');
   const grid = document.querySelector('.gridone');
   const items = Array.from(document.querySelectorAll('.item'));
 
-  // update the grid based on filter
+// update the grid based on filter
   function updateGrid() {
     const searchValue = searchInput.value.toLowerCase();
     const filteredItems = items.filter(item => item.querySelector('h2').textContent.toLowerCase().includes(searchValue));
-
+  
     if (sortSelect.value === 'recent') {
       filteredItems.sort((a, b) =>
-        getDateFromImageURL(b.querySelector('img').getAttribute('src')) - getDateFromImageURL(a.querySelector('img').getAttribute('src'))
+        compareFilenames(b.querySelector('img').getAttribute('src'), a.querySelector('img').getAttribute('src'))
       );
     }
-
+  
     grid.innerHTML = '';
     filteredItems.forEach(item => grid.appendChild(item));
   }
-
-// extract the date from an image URL
-  function getDateFromImageURL(imageUrl) {
-    const parts = imageUrl.split('/');
-    const datePart = parts[parts.length - 1].substr(0, 8); 
-    const year = parseInt(datePart.substr(0, 4));
-    const month = parseInt(datePart.substr(4, 2)); 
-    const day = parseInt(datePart.substr(6, 2));
-
-    return new Date(year, month, day);
+  
+// filenames to extract the date and sort
+  function compareFilenames(filenameA, filenameB) {
+    const dateA = extractDateFromFilename(filenameA);
+    const dateB = extractDateFromFilename(filenameB);
+    return dateB - dateA;
   }
-
-// event listeners for search input and sort
+  
+// extract the date from an image filename
+  function extractDateFromFilename(filename) {
+    const datePart = filename.match(/(\d{8})/);
+    if (datePart) {
+      const year = parseInt(datePart[1].substr(0, 4));
+      const month = parseInt(datePart[1].substr(4, 2));
+      const day = parseInt(datePart[1].substr(6, 2));
+      return new Date(year, month - 1, day);
+    }
+    return new Date(0);
+  }
+ 
+// event listeners for search + sort
   searchInput.addEventListener('input', updateGrid);
   sortSelect.addEventListener('change', updateGrid);
-
-// initialize
+  
+// Initialize
   updateGrid();
 });
 
