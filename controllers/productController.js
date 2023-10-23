@@ -33,4 +33,16 @@ const ProductController = {
     },
 };
 
+
+exports.getProduct = (req, res, next) => {
+    const prodId = req.params.id;
+    console.log(prodId);
+    res.redirect('/');
+    next();
+};
+
+
+
+
+
 module.exports = ProductController;
