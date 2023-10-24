@@ -3,7 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Interactive Full-Stack Application
+
+Interactive Full-Stack Application for selling of used goods. The marketplace or Post, features photos of products for sale via an infinite scroll interface. Buyers, products are featured by submitting their products and can be filtered by name, description, and price. On the seller side, products are displayed on a members cms which you can use to update, delete and manage products and receive payment for your products (this is future implemenation).
+
+
 
 ![Opera Snapshot_2023-10-24_020409_postup-69c44779947a herokuapp com](https://github.com/Vin7ag3/team5/assets/48032663/41e4b39c-34c6-469a-a3cf-530680bb43f3)
 ![Opera Snapshot_2023-10-24_020346_postup-69c44779947a herokuapp com](https://github.com/Vin7ag3/team5/assets/48032663/89ff6a6e-13c6-4f11-929f-75a1a9856045)
