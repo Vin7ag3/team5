@@ -40,7 +40,8 @@ MIT
 DerekDang05, Iamshaylajade, Matt Estin.
 
 ## Tests
-None
+
+Diagram: ![PostUp Diagram](https://github.com/Vin7ag3/team5/assets/48032663/99fc6eb3-bca6-4e90-9f9d-e2390091faa9)
 
 ## Contact Information
 Github Username: 
