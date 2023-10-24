@@ -1,63 +1,63 @@
-<div class="banner-image py-5"style="position: relative;">
+<main class="banner-image py-5"style="position: relative;">
     <img src="/img/banner.jpg" alt="Banner Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-    <div class="container py-5">
+    <section class="container py-5">
       {{> header }}
-        <div class="row py-5 align-items-center">
-            <div class="col-lg-6">
-                <div class="section">
-                    <div class="container">
-                        <div class="row full-height">
-                            <div class="col-12 align-self-center">
-                                <div class="section">
+        <article class="row py-5 align-items-center">
+            <article class="col-lg-6">
+                <article class="section">
+                    <article class="container">
+                        <article class="row full-height">
+                            <article class="col-12 align-self-center">
+                                <section class="section">
                                     <div class="left-side-shadow"></div>
                                     <div class="right-side-shadow"></div>
                                     <ul class="link-list a-one">
-                                        <li><a href="#" style="color:#c4beae;"><span>PostUp.</span></a></li>
-                                        <li><a href="#" style="color:#c4beae; text-decoration:none;"><span>We sell your stuff.</span></a></li>
+                                        <li><a href="#" style="color:#c4beae;"><nav>PostUp.</nav></a></li>
+                                        <li><a href="#" style="color:#c4beae; text-decoration:none;"><header>We sell your stuff.</header></a></li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                <div class="lead-form rounded p-5">
+                                </section>
+                            </article>
+                        </article>
+                    </article>
+                </article>
+            </article>
+            <section class="col-lg-6 text-center mt-5 mt-lg-0">
+                <section class="lead-form rounded p-5">
                     <form id="upload-form" method="POST" enctype="multipart/form-data" action="/upload">
-                        <div>
+                        <article>
                             <h3 class="font-weight-bold">Post it</h3>
                             <h6 class="pt-3 pb-4 form-h6">List your unwanted items</h6>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
+                        </article>
+                        <section class="row">
+                            <section class="col-12">
+                                <section class="form-group">
                                     <label for="name">Name:</label>
                                     <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
+                                </section>
+                                <section class="form-group">
                                     <label for="description">Description:</label>
                                     <textarea id="description" class="text-area" name="description" required></textarea>
-                                </div>
-                                <div class="form-group">
+                                </section>
+                                <section class="form-group">
                                     <label for="price">Price:</label>
                                     <input type="number" id="price" name="price" required>
-                                </div>
-                                <div class="form-group">
+                                </section>
+                                <section class="form-group">
                                     <label for="input-file-preview">Upload Image:</label>
-                                    <div id="drop-zone" class="drop-zone">
+                                    <nav id="drop-zone" class="drop-zone">
                                         <img src="/img/load.gif" alt="uploadicon" width="100" height="100">
                                         <p>Drag + drop image files here</p>
-                                    </div>
+                                    </nav>
                                     <input type="file" id="input-file-preview" name="input-file-preview" required>
-                                    <div id="image-preview" class="mt-2"></div>
-                                </div>
+                                    <nav id="image-preview" class="mt-2"></nav>
+                                </section>
                                 <button type="submit" class="btn-up">Upload</button>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </form>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </article>
       {{>filter}}
-    </div>
-</div>
+    </section>
+</main>
