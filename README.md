@@ -25,9 +25,30 @@ Figma: https://www.figma.com/file/2C8XQgwl1loykNMpjfMScc/team-5-UI%2FUX?type=des
 [Questions](#contact-information)
 
 ## Installation
-Open root folder in the terminal and input npm install to install dependencies.
+
+install dependencies
+
++ Create database
+
++ Seed database
+
++ Start server
+
++ Open site using the specified localhost: port
 
 ## Usage
+
+To use PostUp, follow these steps:
+
+Access the Application on Heroku: 
+
+Navigation: Post your Items in the from located in the banner and include the details name, description, and price associated with the product post drag and drop or select your product images.
+
+Submit the Post: Once you've chosen your Item it will be fetched from the database and render to the bottom of the page.
+
+Explore: Upon posting it will update on the Posts grid browse through the filter dropdown and filter the most recents to view your item.
+
+Search: To perform a new search, enter the name of the items you wish to see.
 
 Heroku Deployed: https://postup-69c44779947a.herokuapp.com
 
