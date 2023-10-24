@@ -11,6 +11,10 @@
   --white: #ffffff;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 * {
   font-family: 'Hanken Grotesk', sans-serif;
 }
