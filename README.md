@@ -8,8 +8,6 @@ Interactive Full-Stack Application
 ![Opera Snapshot_2023-10-24_020409_postup-69c44779947a herokuapp com](https://github.com/Vin7ag3/team5/assets/48032663/41e4b39c-34c6-469a-a3cf-530680bb43f3)
 ![Opera Snapshot_2023-10-24_020346_postup-69c44779947a herokuapp com](https://github.com/Vin7ag3/team5/assets/48032663/89ff6a6e-13c6-4f11-929f-75a1a9856045)
 
-Diagram: ![PostUp Diagram](https://github.com/Vin7ag3/team5/assets/48032663/99fc6eb3-bca6-4e90-9f9d-e2390091faa9)
-
 Figma: https://www.figma.com/file/2C8XQgwl1loykNMpjfMScc/team-5-UI%2FUX?type=design&node-id=35-0&mode=design&t=AGMoUMU2oFds7pdu-0
 
 ## Table of Contents:
@@ -40,8 +38,6 @@ MIT
 DerekDang05, Iamshaylajade, Matt Estin.
 
 ## Tests
-
-Diagram: ![PostUp Diagram](https://github.com/Vin7ag3/team5/assets/48032663/99fc6eb3-bca6-4e90-9f9d-e2390091faa9)
 
 ## Contact Information
 Github Username: 
