@@ -4,7 +4,7 @@
 
 ## Description
 
-Interactive Full-Stack Application for selling of used goods. The marketplace or Post, features photos of products for sale via an infinite scroll interface. Buyers, products are featured by submitting their products and can be filtered by name, description, and price. On the seller side, products are displayed on a members cms which you can use to update, delete and manage products and receive payment for your products (this is future implemenation).
+Interactive Full-Stack Application for selling of used goods. The marketplace or Post, features photos of products for sale via an infinite scroll interface and displayed on a grid layout. Sellers, products are featured by submitting their products and can be filtered by name, description, and price. When logging from the menu (hamburger), listed products are displayed on a members content manager where you can use to update, delete, and manage products and receive payment (this is future implemenation).
 
 
 
@@ -51,7 +51,7 @@ Submit the Post: Once you've chosen your Item it will be fetched from the databa
 
 Explore: Upon posting it will update on the Posts grid browse through the filter dropdown and filter the most recents to view your item.
 
-Search: To perform a new search, enter the name of the items you wish to see.
+Search: To perform a new search, enter the name of the items you want to see.
 
 Heroku Deployed: https://postup-69c44779947a.herokuapp.com
 
