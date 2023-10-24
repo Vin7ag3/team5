@@ -62,6 +62,8 @@ MIT
 
 DerekDang05, Iamshaylajade, Matt Estin.
 
+Designed by Freepik Free License Images.
+
 ## Tests
 
 N/A 
