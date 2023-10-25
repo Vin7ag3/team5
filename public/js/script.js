@@ -107,6 +107,20 @@ document.addEventListener('DOMContentLoaded', function() {
 // initialize
   updateGrid();
 });
-function unblurImage() {
-  document.getElementById("myImage").style.filter = "blur(0)";
+//TEST Code
+// Unblur imgs when login button is clicked
+// import productData from "../../seeds/products";
+// import seedProducts from "../../seeds/products";
+// function unblurImage() {
+//   // const blurredImg = document.getElementById("myImage");
+//   for (var i=0; i<productData.length; i++) {
+//     productData[i].style.filter="blur(0)"
+//   }
+// }
+
+function removeBlur() {
+  const remove = document.querySelectorAll('#myImage');
+  remove.forEach(element => {
+    element.removeAttribute('id')
+  })
 }

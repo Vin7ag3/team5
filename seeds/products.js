@@ -63,7 +63,7 @@ const seedProducts = async () => {
     await Product.bulkCreate(productData);
     console.log('Products seeded successfully');
   };
-  
+module.exports = productData;
 module.exports = seedProducts;
 
 
