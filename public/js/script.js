@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //   }
 // }
 
-function removeBlur() {
-  const remove = document.querySelectorAll('#myImage');
-  remove.forEach(element => {
-    element.removeAttribute('id')
-  })
-}
+// function removeBlur() {
+//   const remove = document.querySelectorAll('#myImage');
+//   remove.forEach(element => {
+//     element.removeAttribute('id')
+//   })
+// }
