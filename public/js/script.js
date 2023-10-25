@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     return new Date(0);
   }
  
+
+
 // event listeners for search + sort
   searchInput.addEventListener('input', updateGrid);
   sortSelect.addEventListener('change', updateGrid);
@@ -105,4 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // initialize
   updateGrid();
 });
-
+function unblurImage() {
+  document.getElementById("myImage").style.filter = "blur(0)";
+}

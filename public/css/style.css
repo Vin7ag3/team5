@@ -11,7 +11,7 @@
   --white: #ffffff;
 }
 
-.blur {
+#myImage{
   filter: blur(5px);
 }
 

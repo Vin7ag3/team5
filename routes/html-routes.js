@@ -26,6 +26,12 @@ router.get('/', async (req, res) => {
   }
 });
 
+//route to display members page TEST!!!
+router.get('/members', async (req, res) => {
+  ProductController.display
+})
+
+
 // route to display images
 router.get('/products', async (req, res) => {
   try {
